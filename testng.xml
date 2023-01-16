@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <suite name="Suite" parallel="tests">
+
+  <test thread-count="5" name="Test1" parallel="true">
+<groups>
+<run>
+<include name="REgression"/>
+
+</run>
+</groups>
+    <classes>
+      <class name="Testng_concepts.TestClass1"/>
+      <class name="Testng_concepts.TestClass2"/>
+      <class name="Testng_concepts.TestClass3"/>
+      <class name="Testng_concepts.TestClass4"/>
+      <class name="Testng_concepts.TestClass5"/>
+</classes>
+</test>
+<test thread-count="1" name="test2" parallel="false">
+<classes>
+      <class name="Testng_concepts.TestClass6"/>
+      <class name="Testng_concepts.TestClass7"/>
+      <class name="Testng_concepts.TestClass8"/>
+      <class name="Testng_concepts.TestClass9"/>
+      <class name="Testng_concepts.TestClass10"/>
+    </classes>
+  </test>> <!-- Test -->
+</suite> <!-- Suite -->
