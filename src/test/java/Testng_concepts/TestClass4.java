@@ -1,9 +1,14 @@
 package Testng_concepts;
 
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class TestClass4 {
-
+	@BeforeClass
+	public void beforetest()
+	{
+		System.out.println("I am in testcalss4");
+	}
 	
 	@Test(priority=1,groups="REgression")
 	public void testcase1()
